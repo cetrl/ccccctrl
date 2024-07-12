@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+
+body {
+  --main-color: rgb(137, 71, 153);
+  --light-color: rgb(99, 174, 159);
+  /* background: rgb(237, 235, 233); */
+  color: rgb(53, 46, 41);
+  font-family: "Inria Sans", sans-serif;
+  /* font-family: "Inria Sans", sans-serif; */
+  font-style: normal;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
+  padding-top: 24px;
+  padding: 12px;
+  font-size: 1.3em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#print p{
+  text-align: center;
+  max-width: 15vw;
+  margin-left: 5vw;
+  margin-bottom: 1.2em;
+}
+#print-button{
+  background: var(--light-color);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  width: 80px;
+  box-shadow: 0 0 20px var(--main-color);
+}
+#print #howtoprint {
+  display: none;
+  color: var(--main-color);
+  text-align: left;
+}
+#print:hover #howtoprint{display: block;}
+
+#right-column h1 {
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+#right-column h2 {
+  margin-top: 12px;
+}
+#left-column h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#infos ul {
+  font-size: 1.2em;
+}
+
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 0;
+}
+
+#experiences h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0;
+}
+p {
+  font-size: 0.9em;
+}
+a {
+  color: black;
+  text-decoration: underline var(--light-color) 1.2px;
+}
+
+header {
+  text-align: center;
+  /* width: 62.5vw;
+  margin-left: 32.5vw; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+
+header section #photo{
+  grid-column: 1;
+}
+
+#photo img { 
+  opacity: 90%;
+  max-height: 25vw;
+  display: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.date {
+  margin: 0;
+  position:static;
+  color: var(--main-color);
+}
+
+#nom {
+  font-size: 2em;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+section {
+  padding: 12px;
+}
+
+ul {
+  margin-top: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+
+#savoiretre li {
+  margin-left: 6px;
+  list-style-type: "– ";
+}
+
+li {
+  margin: 0;
+}
+
+.textcolor {
+  color: var(--main-color);
+}
+
+hr {
+  border: 0.7px solid var(--light-color);
+}
+
+#left-column{
+  margin-left: 50px;
+  margin-right: 100px;
+
+}
+
+#left-column  hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#infos ul {
+  list-style: none;
+}
+
+#right-column p {
+  margin: 2px;
+}
+
+#right-column {
+  margin-left: 12px;
+}
+
+#right-column div {
+  margin-bottom: 12px;
+}
+
+#infos ul {
+  text-align: center;
+}
+
+@media (max-width: 50em) {
+    main {    
+        display: block;
+    }
+    header {
+      text-align: left;
+      width: 80vw;
+      margin-left: 0;
+      margin-bottom: 50px;
+      display: block;
+    }
+
+    #right-column{
+      margin: 0;
+    }
+
+    #left-column{
+      margin: 0;
+    }
+
+
+  #print{display: none;}
+
+    
+  }
+  
+  @media print {
+    #print{display: none;}
+    body {
+  font-size: 1em;
+  }
+  header {
+    text-align: center;
+    width: 95vw;
+    margin: 0;
+    /* margin-left: 32.5vw; */
+    margin-bottom: -10px;
+    display: grid;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  } 
+
+  .date {
+    right: 24px;
+    margin-top: -24px;
+    position: absolute;
+    color: var(--main-color);
+  }
+
+  #left-column{
+    margin: 0;
+  }
+
+  #photo img { 
+    opacity: 90%;
+    max-height: 25vw;
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  body, a, #infos h1 {
+  --main-color: rgb(109, 192, 179);
+  --light-color: rgb(63, 109, 109);
+  color: rgb(209, 206, 203);
+  }
+
+  body{  background-color: rgb(7, 2, 15);
+    ;}
+} 

@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Compagnon-Roman";
+  src: url("fonts/Compagnon-Roman.woff") format("woff"),
+    url("fonts/Compagnon-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ortica-Light";
+  src: url("fonts/Ortica-Light.woff") format("woff"),
+    url("fonts/Ortica-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ortica-Bold";
+  src: url("fonts/Ortica-Bold.woff") format("woff"),
+    url("fonts/Ortica-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Compagnon-Italic";
+  src: url("fonts/Compagnon-Italic.woff") format("woff"),
+    url("fonts/Compagnon-Italic.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(7, 2, 15);
+  color: rgb(7, 2, 15);
+  margin: 0;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  --main-color : whitesmoke;
+  --enhance-color : #ff596f;
+}
+
+article {
+  font-family: "Compagnon-Roman";
+  font-size: 1.4em;
+  line-height: 1.8em;
+  margin-left: 40vw;
+  max-width: 30em;
+  position: absolute;
+  color: var(--main-color);
+}
+.italic {
+  font-family: "Compagnon-Italic";
+  color: var(--main-color);
+}
+.article_projet {
+  font-family: "Compagnon-Roman";
+  color: var(--main-color);
+  font-size: 1.4em;
+  line-height: 1.8em;
+  margin-left: 10vw;
+  max-width: 30em;
+  position: absolute;
+  padding-bottom: 10vh;
+}
+
+.fleche {
+  position: absolute;
+  z-index: 0;
+  font-family: "Compagnon-Roman";
+  color: var(--main-color);
+  font-size: 2.5em;
+  bottom: 0px;
+  width: 100vw;
+  text-align: center;
+}
+.fleche a {
+  text-decoration: none;
+}
+
+.text_about article {
+  padding-top: 35vh;
+  align-items: center;
+}
+
+.about {
+  font-family: "Compagnon-Roman";
+  font-size: 1.5em;
+  left: -27vw;
+  top: 100px;
+}
+
+.link-about {
+  text-decoration: none;
+  color: var(--enhance-color);
+}
+
+h2 {
+  font-family: "Compagnon-Roman";
+  font-size: 0.7em;
+  color: var(--enhance-color);
+}
+
+h3 {
+  position: absolute;
+  opacity: 0%;
+}
+
+.text_proj h1 {
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.text_proj h2 {
+  font-size: 1em;
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+
+.text_proj {
+  padding-top: 10vh;
+  padding-bottom: 50vh;
+}
+
+h1 {
+  font-family: "Ortica-Light";
+  color: var(--main-color);
+  font-size: 2em;
+  list-style: none;
+}
+
+header h1 {
+  line-height: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.dateproj {
+  font-family: "Compagnon-Roman";
+  font-size: 0.5em;
+  color: var(--enhance-color);
+  margin: 0.2em;
+  line-height: 0.5em;
+}
+
+a:active {
+  color: var(--enhance-color);
+}
+
+.accueil {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.accueil ul {
+  background-color: black;
+  box-shadow: 0 0 100px black;}
+
+.accueil li {
+  display: inline-block;
+  padding: 40px;
+  text-shadow: 0px 0px 100px black;
+
+}
+
+.accueil a {
+  font-family: "Ortica-Bold";
+  font-size: 4.5em;
+  line-height: 2em;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 0px 30px var(--enhance-color);
+  opacity: calc(0.7);
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  min-height: 100px;
+  background: linear-gradient(black 70%, transparent);
+  z-index: 1;
+  text-align: center;
+}
+
+header a {
+  font-family: "Ortica-Bold";
+  opacity: calc(0.6);
+  font-size: 2rem;
+  line-height: 80px;
+  margin-left: 6vw;
+  margin-right: 4vw;
+  text-decoration: none;
+  color: var(--enhance-color);
+  opacity: calc(0.75);
+}
+
+.container {
+  width: 98vw;
+  position: absolute;
+  text-align: center;
+}
+
+.carousel-cell {
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  counter-increment: carousel-cell;
+  position: absolute;
+}
+
+img,
+video {
+  margin-top: 5vh;
+  height: 95vh;
+}
+
+iframe {
+  height: 100vh;
+  width: 100vw;
+}
+
+.text_block {
+  width: 100%;
+  height: 100vh;
+}
+
+#threebackground {
+  z-index: -1;
+}
+
+.menu {
+  font-size: calc(1em + 0.390625vw);
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  list-style-type: none;
+  height: auto;
+  margin-left: 15vw;
+  margin-top: calc(70px + 7vh);
+  z-index: 1;
+  position: absolute;
+}
+
+.menu a {
+  text-decoration: none;
+  display: block;
+  line-height: calc(1.2em + 2vh);
+}
+
+.menu h2,
+.contact {
+  margin-left: 45px;
+}
+
+.contact a {
+  line-height: 4em;
+}
+
+#lititle,
+.titreproj,
+header a,
+header p {
+  background: transparent;
+  box-shadow: none;
+  transition: text-shadow 0.7s;
+}
+
+#lititle:hover,
+.titreproj:hover,
+a:hover {
+  transition: 0.7s;
+  color: var(--main-color);
+  text-shadow: 0px 0px 30px var(--enhance-color), 0px 0px 30px blueviolet;
+  opacity: calc(0.9);
+}
+
+.menu a:hover .titreproj {
+  text-shadow: 0px 0px 30px var(--enhance-color), 0px 0px 30px blueviolet;
+  opacity: calc(0.9);
+  transition: 1s;
+}
+
+a {
+  text-decoration: underline;
+}
+
+section article {
+  opacity: 0;
+  position: absolute;
+  transition: all 350ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+section article.visible {
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.25, 1, 0.5, 1) 350ms;
+  transform: translateY(-10px);
+}
+
+.vignette {
+  position: absolute;
+  height: 50vh;
+  margin-top: -10vh;
+  /* filter: sepia(100%) hue-rotate(90deg) brightness(70%) saturate(200%); */
+  filter: contrast(120%) brightness(70%);
+  box-shadow: 0px 0px 50px 1px darkblue;
+}
+
+#hypergarden {
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 800px) {
+  header a {
+    font-size: 1.5em;
+    line-height: 50px;
+    margin: 1vw;
+    word-break: break-all;
+  }
+
+  header {
+    height: 70px;
+    text-align: left;
+    padding-left: 2vw;
+    font-size: calc(0.85em + 0.390625vw);
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+  article {
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+
+  #hypergarden {
+    width: 90vw;
+  }
+
+  .accueil {
+    font-size: 0.6em;
+  }
+
+  .accueil li {
+    padding-left: 5vw;
+  }
+
+  .accueil ul {
+    padding: 0;
+  }
+
+  .carousel-cell {
+    z-index: 0;
+    width: 100vw;
+    counter-increment: carousel-cell;
+    position: absolute;
+  }
+
+  img {
+    height: 50vh;
+    margin-top: 25vh;
+  }
+  video {
+    width: 100vw;
+  }
+
+  .article_projet {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .vignette {
+    display: none;
+  }
+
+  .accueil li {
+    display: block;
+  }
+
+  .accueil a {
+    opacity: calc(1);
+  }
+
+  .about {
+    margin-left: 35vw;
+    font-size: 1em;
+  }
+}
