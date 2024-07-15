@@ -7,7 +7,7 @@
             <a class="link-about" href="https://www.instagram.com/bloom_asso/" target="_blank">BLOOM.</a></p>
         <p>Contact&nbsp:</p>
         <p>
-            <a class="link-about" href="mailto:celiatruel@gmail.com" target="_blank">✿ Mail → celiatruel@gmail.com</a>
+            <a class="link-about" href="mailto:cetrl@proton.me" target="_blank">✿ Mail → cetrl@proton.me</a>
         </p>
 
         <p>
